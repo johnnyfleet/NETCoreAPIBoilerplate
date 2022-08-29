@@ -1,40 +1,74 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
+<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>BervProject.WebApi.Boilerplate</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Autofac" Version="6.4.0" />
-    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
-    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.4.3" />
-    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.2" />
-    <PackageReference Include="AWSSDK.S3" Version="3.7.9.43" />
-    <PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.0.196" />
-    <PackageReference Include="Azure.Storage.Blobs" Version="12.13.1" />
-    <PackageReference Include="Azure.Storage.Queues" Version="12.11.1" />
-    <PackageReference Include="Hangfire" Version="1.7.31" />
-    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.31" />
-    <PackageReference Include="HangFire.Autofac" Version="2.3.1" />
-    <PackageReference Include="Hangfire.PostgreSql" Version="1.9.8" />
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
-    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="5.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0"/>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.4.3"/>
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.2"/>
+    <PackageReference Include="AWSSDK.S3" Version="3.7.9.43"/>
+    <PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.0.196"/>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.11.0"/>
+    <PackageReference Include="Azure.Storage.Queues" Version="12.11.1"/>
+    <PackageReference Include="Hangfire" Version="1.7.31"/>
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.31"/>
+    <PackageReference Include="HangFire.Autofac" Version="2.3.1"/>
+    <PackageReference Include="Hangfire.PostgreSql" Version="1.9.8"/>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0"/>
+    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="5.2.0"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.Azure" Version="1.4.0" />
-    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.8" />
-    <PackageReference Include="NLog" Version="5.0.2" />
-    <PackageReference Include="NLog.Web.AspNetCore" Version="5.1.1" />
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.6" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Azure" Version="1.4.0"/>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.8"/>
+    <PackageReference Include="NLog" Version="5.0.2"/>
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.1.1"/>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.6"/>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    <PackageReference Include="Azure.Data.Tables" Version="12.5.0"/>
+    <PackageReference Include="Azure.Messaging.EventHubs" Version="5.7.1"/>
+    <PackageReference Include="Confluent.Kafka" Version="1.8.2"/>
+    <PackageReference Include="CsvHelper" Version="27.2.1"/>
+    <PackageReference Include="Equinox" Version="3.0.7"/>
+    <PackageReference Include="Equinox.CosmosStore" Version="3.0.7"/>
+    <PackageReference Include="Equinox.MemoryStore" Version="3.0.6"/>
+    <PackageReference Include="ExhaustiveMatching.Analyzer" Version="0.5.0"/>
+    <PackageReference Include="FSharp.Core" Version="6.0.4"/>
+    <PackageReference Include="FakeItEasy" Version="7.3.1"/>
+    <PackageReference Include="FluentAssertions" Version="6.6.0"/>
+    <PackageReference Include="FsCheck" Version="2.16.4"/>
+    <PackageReference Include="FsCheck.Xunit" Version="2.16.4"/>
+    <PackageReference Include="FsCodec.SystemTextJson" Version="2.3.2"/>
+    <PackageReference Include="GraphQL" Version="5.1.1"/>
+    <PackageReference Include="LanguageExt.Core" Version="4.2.2"/>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.4"/>
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.26.1"/>
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0"/>
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.EventHubs" Version="4.3.1"/>
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="5.0.0"/>
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.1.0"/>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
+    <PackageReference Include="NodaTime" Version="3.1.0"/>
+    <PackageReference Include="NodaTime.Serialization.JsonNet" Version="3.0.0"/>
+    <PackageReference Include="Parquet.Net" Version="3.9.1"/>
+    <PackageReference Include="Serilog" Version="2.11.0"/>
+    <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.2"/>
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0"/>
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0"/>
+    <PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.1.0"/>
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1"/>
+    <PackageReference Include="TimeZoneConverter" Version="5.0.0"/>
+    <PackageReference Include="coverlet.collector" Version="3.1.0"/>
+    <PackageReference Include="dotNetRDF" Version="2.7.4"/>
+    <PackageReference Include="xunit" Version="2.4.1"/>
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3"/>
   </ItemGroup>
-
   <ItemGroup>
-    <Content Update="nlog.config" CopyToOutputDirectory="PreserveNewest" />
+    <Content Update="nlog.config" CopyToOutputDirectory="PreserveNewest"/>
   </ItemGroup>
-
 </Project>

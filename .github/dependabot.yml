@@ -4,8 +4,8 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-    time: "08:00"
-    timezone: Asia/Jakarta
+    time: "18:00"
+    timezone: Pacific/Auckland
   open-pull-requests-limit: 100
   
 - package-ecosystem: github-actions
@@ -14,12 +14,12 @@ updates:
     interval: weekly
     day: saturday
     time: "08:00"
-    timezone: Asia/Jakarta
+    timezone: APacific/Auckland
   open-pull-requests-limit: 100
   reviewers:
-  - berviantoleo
+  - johnnyfleet
   assignees:
-  - berviantoleo
+  - johnnyfleet
 
 - package-ecosystem: docker
   directory: "/"
@@ -27,9 +27,9 @@ updates:
     interval: weekly
     day: saturday
     time: "08:00"
-    timezone: Asia/Jakarta
+    timezone: Pacific/Auckland
   open-pull-requests-limit: 100
   reviewers:
-  - berviantoleo
+  - johnnyfleet
   assignees:
-  - berviantoleo
+  - johnnyfleeto
